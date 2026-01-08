@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropshipping V2.0 | Masterclass</title>
+    <title>Dropshipping V2.0 | Masterclass 2026</title>
     
     <script>
     !function(f,b,e,v,n,t,s)
@@ -17,72 +17,31 @@
     fbq('init', '1963368644585428'); 
     fbq('track', 'PageView');
     </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&family=Assistant:wght@300;600&display=swap" rel="stylesheet">
     <style>
-        :root { --gold: #e2b04a; --gold-dark: #b8860b; --bg: #050505; }
-        body { font-family: 'Heebo', sans-serif; background-color: var(--bg); color: #fff; margin: 0; padding: 0; line-height: 1.6; }
+        :root { --gold: #e2b04a; --gold-dark: #b8860b; --bg: #050505; --card: #111; }
+        body { font-family: 'Heebo', sans-serif; background-color: var(--bg); color: #fff; margin: 0; padding: 0; line-height: 1.6; overflow-x: hidden; }
         
-        /* נראות פרימיום */
-        .wrapper { max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+        .container { max-width: 650px; margin: 0 auto; padding: 60px 20px; text-align: center; }
         
-        .top-tag { background: linear-gradient(90deg, transparent, rgba(226,176,74,0.2), transparent); border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold); padding: 10px; font-size: 13px; letter-spacing: 2px; margin-bottom: 30px; color: var(--gold); }
+        /* תגית עליונה יוקרתית */
+        .top-badge { display: inline-block; background: rgba(226, 176, 74, 0.1); border: 1px solid var(--gold); color: var(--gold); padding: 8px 20px; border-radius: 50px; font-size: 13px; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 35px; animation: fadeInDown 0.8s ease; }
 
-        h1 { font-size: clamp(35px, 7vw, 60px); font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
-        .gradient-text { background: linear-gradient(180deg, #fff 0%, #a5a5a5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h1 { font-size: clamp(38px, 8vw, 64px); font-weight: 900; line-height: 1.1; margin-bottom: 25px; letter-spacing: -1px; }
+        .gradient-text { background: linear-gradient(180deg, #fff 40%, #888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gold-text { color: var(--gold); text-shadow: 0 0 20px rgba(226,176,74,0.3); }
+
+        .description { font-family: 'Assistant', sans-serif; font-size: 21px; color: #b0b0b0; margin-bottom: 45px; font-weight: 300; line-height: 1.5; }
+
+        /* תיבת היתרונות */
+        .benefits-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 50px; text-align: right; }
+        .benefit-card { background: var(--card); border: 1px solid #222; padding: 18px; border-radius: 15px; font-size: 17px; display: flex; align-items: center; gap: 12px; transition: 0.3s; }
+        .benefit-card:hover { border-color: var(--gold); background: #181818; }
+        .check-icon { color: var(--gold); font-weight: 900; font-size: 20px; }
+
+        /* כפתור ה-Master המניע לפעולה */
+        .cta-wrapper { margin-top: 40px; }
+        .main-btn { display: inline-block; width: 100%; max-width: 450px; background: linear-gradient(180deg, var(--gold) 0%, var(--gold-dark) 100%); color: #000 !important; padding: 24px 20px; font-size: 26px; font-weight: 900; border-radius: 18px; text-decoration: none; box-shadow: 0 15px 40px rgba(226,176,74,0.3); transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden; }
+        .main-btn:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(226,176,74,0.5); }
         
-        .main-highlight { color: var(--gold); text-shadow: 0 0 15px rgba(226,176,74,0.4); }
-
-        .sub-text { font-size: 20px; color: #a0a0a0; margin-bottom: 40px; font-weight: 300; max-width: 600px; margin-left: auto; margin-right: auto; }
-
-        /* תיבת יתרונות מעוצבת */
-        .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 40px; text-align: right; }
-        .feature-item { background: #111; border: 1px solid #222; padding: 15px; border-radius: 12px; font-size: 16px; display: flex; align-items: center; gap: 10px; }
-        .feature-item i { color: var(--gold); font-weight: bold; }
-
-        /* הכפתור ה"נכון" - גדול, ברור ומניע */
-        .cta-box { margin-top: 50px; position: sticky; bottom: 20px; z-index: 100; }
-        .master-btn { display: inline-block; background: linear-gradient(180deg, var(--gold) 0%, var(--gold-dark) 100%); color: #000 !important; padding: 25px 60px; font-size: 26px; font-weight: 900; border-radius: 15px; text-decoration: none; box-shadow: 0 15px 35px rgba(226,176,74,0.4); transition: 0.3s; width: 100%; box-sizing: border-box; }
-        .master-btn:hover { transform: translateY(-5px); box-shadow: 0 20px 45px rgba(226,176,74,0.6); }
-
-        /* מונה דמה ליצירת דחיפות */
-        .urgency { font-size: 14px; color: #ff4d4d; margin-top: 15px; font-weight: bold; }
-
-        @media (max-width: 600px) { .features-grid { grid-template-columns: 1fr; } }
-    </style>
-</head>
-<body>
-
-<div class="wrapper">
-    <div class="top-tag">REVEALING THE NEW MODEL: E-COMMERCE 2026</div>
-    
-    <h1><span class="gradient-text">תפסיקו לנחש - </span><br><span class="main-highlight">תתחילו לבנות.</span></h1>
-    
-    <p class="sub-text">המודל ששינה את חוקי המשחק: כך תקימו מותג איקומרס רווחי בשיטת דרופשיפינג 2.0 עם ליווי צמוד של דוד פופוביץ'.</p>
-
-    <div class="features-grid">
-        <div class="feature-item"><i>✓</i> מותג ישראלי כחול-לבן</div>
-        <div class="feature-item"><i>✓</i> ליווי אישי עד לתוצאות</div>
-        <div class="feature-item"><i>✓</i> ללא מלאי וללא סיכון</div>
-        <div class="feature-item"><i>✓</i> שיטה מוכחת עם מאות תלמידים</div>
-    </div>
-
-    <div class="cta-box">
-        <a href="#" id="cta-link" class="master-btn">אני רוצה גישה להדרכה >></a>
-        <div class="urgency">⚠️ ההדרכה זמינה לזמן מוגבל בלבד</div>
-    </div>
-
-    <div style="margin-top: 60px; opacity: 0.4; font-size: 12px;">
-        &copy; 2026 דוד פופוביץ' | Trust The Brokers Ltd <br>
-        התוצאות באתר הן אישיות ומשתנות מתלמיד לתלמיד
-    </div>
-</div>
-
-<script>
-    document.getElementById('cta-link').addEventListener('click', function() {
-        fbq('track', 'Lead');
-    });
-</script>
-
-</body>
-</html>
+        .urgency-tag { font-size: 14px; color: #ff4d4d; margin-top: 18px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap
